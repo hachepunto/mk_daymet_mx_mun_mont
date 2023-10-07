@@ -1,0 +1,2 @@
+find -L data/ -name '*.nc'| \
+	sed -e 's#^data/#results/#' -e 's#\.nc$#.rds#'
